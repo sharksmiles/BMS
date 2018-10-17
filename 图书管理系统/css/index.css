@@ -4,30 +4,68 @@
     list-style: none;
 }
 .top{
-    height: 130px;
     display: flex;
-    background-color: #007dfd;
+    padding-top:8px;
+    background-color: brown;
+    padding-bottom:8px;
 }
 .top_left{
     width: 50%;
+    position: relative;
+    color: #ffffff;
 }
 .top_left img {
-    width: 58%;
-    height: 100%;
+    width: 18%;
     margin-left: 20%;
+}
+.top_left .logo1{
+    position: absolute;
+    top:35%;
+    font-size: 22px;
+    font-family: 华文隶书;
+    margin-left: 35px;
+}
+.top_left .logo2{
+    position: absolute;
+    top:58%;
+    font-size: 22px;
+    font-family: 华文隶书;
+    margin-left: 10px;
 }
 .top_right{
      width: 50%;
-    background-color: #007dfd;
  }
 .top_right ul{
-    line-height: 130px;
-    margin-left: 40px;
+    padding-top:7%;
+    margin-left: 15%;
+    display: flex;
+
 }
 .top_right ul li{
-    float: left;
-    margin-right: 20px;
+    flex: 1;
+    margin-right: 10px;
     color: #fff;
+    height: 30px;
+    line-height: 30px;
+}
+.top_right ul li:last-child{
+    flex: 3;
+    padding-left:12%;
+}
+.top_right ul li a{
+    position: relative;
+
+}
+.top_right ul li img{
+    width: 28px;
+    height: 28px;
+}
+.top_right ul li a span{
+
+    position: absolute;
+    top:3px;
+    margin-left: 2px;
+
 }
 .middle{
     height: 450px;
@@ -215,4 +253,9 @@
     border: #323232;
     vertical-align: top;
 
+}
+.copyright{
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
 }

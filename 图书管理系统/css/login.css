@@ -7,9 +7,28 @@
     height: 30px;
     background-color: #273751;
 }
+.title{
+    margin-top:5px;
+    position: relative;
+}
 .title img{
-    width: 23%;
-    margin-left: 10%;
+    width: 7%;
+    margin-left: 16%;
+
+}
+.title .logo1{
+    position: absolute;
+    top:35%;
+    font-size: 22px;
+    font-family: 华文隶书;
+    margin-left: 35px;
+}
+.title .logo2{
+    position: absolute;
+    top:58%;
+    font-size: 22px;
+    font-family: 华文隶书;
+    margin-left: 10px;
 }
 .login_content{
     height: 400px;
@@ -70,4 +89,14 @@ button{
     margin-top: 10px;
     font-size: 14px;
     color: #fff;
+}
+.footer{
+    margin-top:20px;
+    height: 40px;
+    background-color: #273751;
+}
+.footer p{
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
 }
