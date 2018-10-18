@@ -22,9 +22,9 @@ function slideImg() {
 
     //点击导航栏切换图片
     for(var i=0;i<pics.length;i++){
-        lis[5+i].id = i;
+        lis[6+i].id = i;
         //给每个li项绑定点击事件
-        lis[5+i].onclick = function(){
+        lis[6+i].onclick = function(){
             //获取当前li项的index值
             index = this.id;
             changeImg();
@@ -51,9 +51,9 @@ function stopAutoPlay(){
 function changeImg(){
     for(var i=0;i<pics.length;i++){
         pics[i].style.display = "none";
-        lis[5+i].className = "";
+        lis[6+i].className = "";
     }
     pics[index].style.display = "block";
-    lis[index+5].className = "changeColor";
+    lis[index+6].className = "changeColor";
 }
 slideImg();

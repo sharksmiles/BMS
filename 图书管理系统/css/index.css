@@ -49,18 +49,19 @@
     line-height: 30px;
 }
 .top_right ul li:last-child{
-    flex: 3;
+    flex: 2;
     padding-left:12%;
 }
-.top_right ul li a{
+.top_right ul li p{
     position: relative;
+    color: #fff;
 
 }
 .top_right ul li img{
     width: 28px;
     height: 28px;
 }
-.top_right ul li a span{
+.top_right ul li p span{
 
     position: absolute;
     top:3px;
