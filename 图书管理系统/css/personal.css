@@ -1,0 +1,252 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.header{
+    background: url(../img/login_bg_head.jpg) no-repeat;
+    height:300px;
+    width: 994px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+.container{
+    width: 96%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top:75px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: -1px 1px 3px 3px #e0e0e0;
+
+}
+.container .name{
+    padding-left:30px;
+    padding-top:8px;
+    margin-bottom: 10px;
+}
+.container h5,h3{
+    display: inline-block;
+}
+.container h3{
+    font: bold 18px Simsun,"Microsoft YaHei","Arial Unicode MS",Mingliu,Arial,Helvetica;
+    color: #a1973b;
+}
+.container h5{
+    color: #75808e;
+    font: bold 14px Simsun,"Microsoft YaHei","Arial Unicode MS",Mingliu,Arial,Helvetica;
+    margin-left:5px;
+}
+.container .name a{
+    margin-top:5px;
+    float: right;
+    height: 22px;
+    width: 60px;
+    line-height: 22px;
+    margin-right: 22px;
+    background-color: #89c0c7;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+}
+.content{
+    display: flex;
+    width: 96%;
+    height: 92%;
+    margin: 15px auto 0;
+}
+.container_left{
+    flex:2;
+    margin-right: 20px;
+    margin-left:10px;
+    background-color: #f9fafc;
+    border: 1px solid #e0e0e0;
+}
+.container_left ul li{
+    width: 85%;
+    height: 25px;
+    border: 1px solid #e0e0e0;
+    margin: 10px auto;
+    padding-left:10px;
+    background-color: #f9fbfb;
+    line-height: 25px;
+    border-radius: 5px;
+    color: #0292cf;
+    font-size: 13px;
+    cursor: pointer;
+}
+.container_left ul p{
+    width: 85%;
+    height: 22px;
+    margin: 5px auto;
+    padding-left:10px;
+    color: #589159;
+    font-size: 12px;
+    cursor: pointer;
+}
+.container_right{
+    flex: 7;
+    border: 1px solid #e0e0e0;
+    height: 630px;
+}
+.container_right .one .title{
+    margin: 10px;
+    border-bottom: 1px dotted #e0e0e0;
+    padding: 10px;
+    color: #a1973b;
+}
+.container_right .one .act p{
+    color: #75808e;
+    font-size: 13px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.footer{
+     background:url(../img/login_bg_foot.jpg);
+     height: 40px;
+     width: 970px;
+      margin: 0 auto;
+     margin-top:460px;
+     -webkit-background-size:cover;
+     background-size:cover;
+     background-position: 0 -30px;
+ }
+.footer p{
+    text-align: center;
+    font-size: 13px;
+    color: #9cd091;
+    padding-top:10px;
+}
+.container_right .two table{
+    width: 98%;
+    margin:7px;
+    font-size: 13px;
+}
+
+.container_right .two tr td{
+    text-align: center;
+    padding: 3px;
+    /*background-color: #fff;*/
+}
+.container_right .three .Date{
+    width: 90%;
+    margin-left:10%;
+    margin-top:30px;
+}
+.container_right .three .Date input{
+    padding-left: 20px;
+}
+.container_right .three .Date button{
+    width: 65px;
+    height: 22px;
+    margin-left:20px;
+}
+.container_right .three table{
+    width: 90%;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: center;
+}
+.container_right .four{
+    border-bottom: 1px dotted #e0e0e0;
+    padding-bottom:30px;
+}
+.container_right .four div{
+    margin-left: 50px;
+    margin-right:50px;
+    border-bottom: 1px dotted #e0e0e0;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+.container_right .four .rule{
+    font-size: 12px;
+    margin-left: 50px;
+    color: #0db3fd;
+}
+.container_right .four p{
+    font-size: 12px;
+    margin-left: 50px;
+    color: #000;
+    margin-top:10px;
+}
+.container_right .four p span{
+    color: #0db3fd;
+}
+.container_right .five   .shezhi{
+    width: 50%;
+    margin: 50px auto;
+    color: #5a5a5a;
+}
+.container_right .five p{
+    text-align: center;
+    margin-top:15px;
+}
+.container_right .five div{
+    text-align: center;
+    margin-top:15px;
+}
+.shezhi button{
+    margin-top:30px;
+    width: 80px;height: 28px;
+}
+.container_right .six p{
+   margin-left: 25px;
+    margin-top:25px;
+    padding-bottom:10px;
+    margin-right:15px;
+    border-bottom: 1px dotted #9cd091;
+    color: #a1973b;
+    font-size: 14px;
+}
+.container_right .six .ziliao{
+    display: flex;
+    width: 80%;
+    flex-wrap:wrap;
+    margin: 0 auto;
+}
+.container_right .six .ziliao div{
+    width: 50%;
+    margin-top:10px;
+    font-size: 13px;
+    color: #5993b8;
+}
+.container_right .six .change{
+    width: 70%;
+    margin: 0 auto;
+}
+.container_right .six .change div{
+    margin-top:20px;
+    font-size: 13px;
+    color: #5993b8;
+}
+.container_right .six .change div input{
+    width: 200px;
+    padding-left: 20px;
+    height: 25px;
+}
+.container_right .six .ziliaotijiao {
+    width: 90%;
+    margin: 60px auto;
+   padding-left:20%;
+}
+.container_right .six .ziliaotijiao button{
+    margin-right:70px;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    background-color: #0db3fd;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px;
+}
+.container_right .seven table{
+    width: 96%;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: center;
+}
+.container_right .seven table td{
+    padding: 10px 2px 10px 5px;
+}

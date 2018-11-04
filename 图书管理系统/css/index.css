@@ -23,14 +23,14 @@
     top:35%;
     font-size: 22px;
     font-family: 华文隶书;
-    margin-left: 35px;
+    margin-left: 5%;
 }
 .top_left .logo2{
     position: absolute;
     top:58%;
     font-size: 22px;
     font-family: 华文隶书;
-    margin-left: 10px;
+    margin-left: 2%;
 }
 .top_right{
      width: 50%;
@@ -42,15 +42,16 @@
 
 }
 .top_right ul li{
-    flex: 1;
+    flex:1;
     margin-right: 10px;
     color: #fff;
     height: 30px;
     line-height: 30px;
 }
-.top_right ul li:last-child{
-    flex: 2;
+.top_right a{
+    width: 120px;
     padding-left:12%;
+    padding-right: 5%;
 }
 .top_right ul li p{
     position: relative;
@@ -125,9 +126,10 @@
 }
 .content .content_box .content_box1{
     width: 40%;
-    background-color: #5fb1b2;
+    background-color: #5fb0b1;
     height: 300px;
-    margin-right: 2%;
+    margin-right: 3%;
+    overflow: hidden;
 }
 
 .main {
@@ -149,8 +151,7 @@
 }
 
 .changeColor {
-    background: #007dfd;
-    border-radius: 5px;
+    background: #9cd091;
 }
 
 .banner {
@@ -172,84 +173,82 @@
 
 .slide1 {
     background-image: url("../img/1.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
 }
 .slide2 {
     background-image: url("../img/2.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
 }
 .slide3 {
     background-image: url("../img/3.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
 }
 .slide4 {
     background-image: url("../img/2.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
 }
 
-.content .content_box .content_box2{
-    width: 30%;
-    height: 300px;
-    margin-right: 2%;
-}
-.tabs{
-    width:100%;
-    position:relative;
-    background-color: brown;
-}
-.tabs li{
-    float:left;
-}
-.tabs input[type=radio]{/*隐藏单选框的样式*/
-    position:absolute;
-    top:-9999px;
-    left:-9999px;
-}
-.tabs label{
-    display:block;
-    padding:10px;
-    text-align:center;
-    border-bottom:1px solid transparent;
-    position:relative;
-    top:4px;
-    z-index:3;
-    transition:all 0.2s ease-in-out;
-
-}
-.tabs label:hover{
-    background-color: brown;
-
-}
-.tabs .tab_content{
-    width:100%;
-    position:absolute;
-    border-top: 2px solid brown;
-    top:45px;
-    left:0px;
-    z-index:2;
-    padding:10px;
-    display:none;
-}
-.tabs input[type=radio]:checked + label{
-    top:0px;
-    padding-top:14px;
-}
-.tabs input[type=radio]:checked ~ div[id^=tab_content]{
-    display:block;
-}
-
+#tab { width:412px; height:300px; position:relative;margin:0 auto 0 auto; overflow: hidden}
+/*设置容器高宽等*/
+html > body #tab { width:412px;}
+/*兼容IE6:IE6下宽度不够*/
+#tab div { position:absolute; top:30px; left:0; width:412px; height:186px;}
+/*设置容器高宽等*/
+#tab div { display:none;}
+/*设置容器默认隐藏:不用ID是因为下面将利用class来控制容器显示,而class优先级低于id选择器*/
+#tab .block { display:block;}
+/*选中的容器*/
+#tab h3 { float:left; width:103px; height:40px; line-height:40px; margin:0 0 0 0; font-size:12px; cursor:pointer; background-color:#c5c5c5; text-align:center; color:#5a5a5a; font-family:Microsoft YaHei;font-weight:normal;}
+/*默认标题样式*/
+#tab .up { background:#0292cf;color:#fff;}
+/*选中的标题样式*/
+/*修饰列表内容*/
+#tab ul { list-style:none; padding:0; height:186px; margin-top:10px;}
+#tab li { margin-left:10px; margin-right:10px; border-bottom:1px dotted #c6c6c6; height:22px; padding-top:12px; overflow:hidden; font-size:12px;}
+#tab li a { display:inline; font-size:12px; text-decoration:none; text-indent:10px; margin-right:10px;}
+#tab li span{ display:block; float:right; margin-right:5px; color: #bdacb3;}
+a.tab_title:link { color: #5a5a5a; text-decoration:none;}
+a.tab_title:visited { color:#5a5a5a; text-decoration:none;}
+a.tab_title:hover { color:#5a5a5a; text-decoration:none;}
+a.tab_title:active { color:#5a5a5a; text-decoration:none;}
+a.tab_menu:link { color:#6464d5; text-decoration:none;}
+a.tab_menu:hover { color:#8888e0; text-decoration:underline;}
 .content .content_box .content_box3{
-    width: 30%;
-    background-color: #5fb1b2;
+    width: 500px;
     height: 300px;
-    margin-left: 2%;
+    margin-left: 3%;
+    display: flex;
+    flex-wrap:wrap;
+    padding: 15px 0;
+    background-color: #5fb1b2;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content:center;
+
 }
+.content_box3 div{
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    text-align: center;
+    background-color: burlywood;
+}
+.content_box3 div img{
+    width: 100%;
+    height: 100%;
+}
+
 .footer{
     text-align: center;
     background-color: #323232;
-    /*background-image: url(../img/footer.png);*/
-    /*-webkit-background-size: 100%;*/
-    /*background-size: 100%;*/
-    /*padding-bottom: 10px;*/
+
 }
 .footer img{
-    width: 80%;
+    width: 65%;
     background-color: #323232;
     border: #323232;
     vertical-align: top;
@@ -257,6 +256,6 @@
 }
 .copyright{
     text-align: center;
-    font-size: 14px;
-    padding: 5px;
+    font-size: 11px;
+    padding: 2px;
 }

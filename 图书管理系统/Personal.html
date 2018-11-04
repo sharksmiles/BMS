@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的图书馆</title>
+    <link rel="stylesheet" href="./css/personal.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+      <div class="name"> <h3>陈武</h3><span>，欢迎您!</span> <h5>当前日期：2018-11-01</h5> <a href="#">返回首页</a></div>
+        <div class="content">
+            <div class="container_left">
+                <ul>
+                <li onclick="changetext0()">个人功能管理</li>
+                    <p onclick="changetext1()">图书续借</p>
+                    <p onclick="changetext2()">借阅历史查询</p>
+                    <p onclick="changetext3()">借阅权限查询</p>
+                <li>个人信息管理</li>
+                    <p onclick="changetext4()">修改密码</p>
+                    <p onclick="changetext5()">资料变更</p>
+                <li onclick="changetext6()">我的预约</li>
+                <li onclick="changetext7()">我的书架</li>
+                <li>退出我的图书馆</li>
+                </ul>
+            </div>
+            <div class="container_right">
+                <div class="one both_class"   >
+                    <p class="title">个人数字图书馆</p>
+                    <div class="act">
+                        <p>&nbsp;&nbsp;&nbsp;ILASIII网上个人数字图书馆是为读者专门设置的服务平台，不断拓展读者服务领域和提高读者服务水平是ILAS的宗旨。</p>
+
+                        　<p>　为切实保证读者的权益和进行及时的服务，ILAS网上个人数字图书馆只允许注册读者进入，请到图书馆办理有关手续并核实您的资料后注册进入。</p>
+
+                        　<p>　您可以在注册管理中修改密码，修改您的个人资料。</p>
+
+                        　<p>　您可以在我的预约中进行预约请求查询，了解当前的预约状况和处理过程。</p>
+
+                        　　<p>您可以在我的借阅中进行图书续借和借阅权限查询、借阅史查询，了解当前的借阅状况和处理过程。</p>
+
+                        　<p>　您可以在我的荐购中对图书馆准备采购的文献提出“我要荐购”，并可以查询“荐购结果”，如果您有新的文献希望购买，但图书馆准备采购的目录中没有列出,您可以进行荐够。</p>
+
+                        　<p>　您可以在我的财经档案中进行财经查询、财经史查询。</p>
+                    </div>
+                </div>
+                <div class="two both_class" style="display: none">
+                    <table border="1" cellspacing="0" >
+                        <tr bgcolor="#e0e0e0">
+                            <td><input type="checkbox" style="margin-right: 5px">全选</td>
+                            <td>条码号</td>
+                            <td>书名</td>
+                            <td>作者</td>
+                            <td>馆藏地点</td>
+                            <td>借出日期</td>
+                            <td>还回日期</td>
+                            <td>价格</td>
+                            <td>续借时间</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>1231231231231</td>
+                            <td>路过你的全世界sssssss</td>
+                            <td>风雨消消</td>
+                            <td>武汉学院图书馆5楼sssssss</td>
+                            <td>2018-06-03</td>
+                            <td>2019-11-03</td>
+                            <td>54￥</td>
+                            <td>30天</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>1231231231231</td>
+                            <td>路过你的全世界sssssss</td>
+                            <td>风雨消消</td>
+                            <td>武汉学院图书馆5楼sssssss</td>
+                            <td>2018-06-03</td>
+                            <td>2019-11-03</td>
+                            <td>54￥</td>
+                            <td>30天</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>1231231231231</td>
+                            <td>路过你的全世界sssssss</td>
+                            <td>风雨消消</td>
+                            <td>武汉学院图书馆5楼sssssss</td>
+                            <td>2018-06-03</td>
+                            <td>2019-11-03</td>
+                            <td>54￥</td>
+                            <td>30天</td>
+                        </tr>
+                    </table>
+                    <button style="margin-left: 45%; margin-top: 40px; width: 80px;height: 28px; background: #89c0c7; color: #fff; border: 1px solid #fff; border-radius: 5px">续借</button>
+                </div>
+                <div class="three both_class" style="display: none">
+                   <div> <div class="Date">起止日期 <input type="text" placeholder="2018-11-05">——<input type="text" placeholder="2018-11-05"><button>查询</button><button>输出</button></div></div>
+                    <table border="1" cellspacing="0" >
+                        <tr style="background-color: #eee;">
+                            <td>序号</td>
+                            <td>操作类型</td>
+                            <td>操作日期</td>
+                            <td>提名</td>
+                            <td>索取号</td>
+                            <td>条码号</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>借书</td>
+                            <td>2018-10-2</td>
+                            <td>陈武</td>
+                            <td>2018265</td>
+                            <td>963258</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>借书</td>
+                            <td>2018-10-2</td>
+                            <td>陈武</td>
+                            <td>2018265</td>
+                            <td>963258</td>
+                        </tr><tr>
+                        <td>3</td>
+                        <td>借书</td>
+                        <td>2018-10-2</td>
+                        <td>陈武</td>
+                        <td>2018265</td>
+                        <td>963258</td>
+                    </tr>
+                        </table>
+                </div>
+                <div class="four both_class" style="display: none">
+                    <div>网上服务</div>
+                    <span class="rule">允许网上续借 允许网上预约</span>
+                    <div>普通外借服务</div>
+                    <p>最大借数：10 最大租数：0 最大租数：0 最大租数：10</p>
+                    <p>可借<span>[中文图书]</span></p>
+                    <p>规则<span>[10本30天]</span>可借数<span>[10]</span> 可租数<span>[0]</span> 可借天数<span>[0-30]</span>每小时租金<span>[0 续次[1] 续期[30]</span></p>
+                    <p>可借<span>[西文图书]</span></p>
+                    <p>规则 <span>[只阅不借] </span>可借数<span>[0]</span> 可租数<span>[0]</span> 可借天数<span>[0--0]</span>每小时租金<span>[0 续次[0] 续期[0]</span></p>
+                </div>
+                <div class="five both_class" style="display: none">
+                    <div class="shezhi">
+                    <p>修改密码</p>
+                    <p>***设置新密码时，请务必提供您目前的密码。</p>
+                    <div>请输入原密码：<input type="password"></div>
+                    <div>请输入新密码：<input type="password"></div>
+                    <div>请确认原密码：<input type="password"></div>
+                    <button>确认</button>
+                    </div>
+                </div>
+                <div class="six both_class" style="display: none">
+                    <p>—&nbsp;&nbsp;个人资料 &nbsp;—</p>
+                    <div class="ziliao">
+                        <div>登陆名:&nbsp;&nbsp;&nbsp;&nbsp;15031103</div>
+                        <div>读者证号:&nbsp;&nbsp;&nbsp;&nbsp;15031103</div>
+                        <div>姓名:&nbsp;&nbsp;&nbsp;&nbsp;陈武</div>
+                        <div>身份证号:&nbsp;&nbsp;&nbsp;&nbsp;421022199801024511</div>
+                        <div>证状态:&nbsp;&nbsp;&nbsp;&nbsp;有效</div>
+                        <div>有效日期:&nbsp;&nbsp;&nbsp;&nbsp;20160107---20200106</div>
+                    </div>
+                    <p>—&nbsp;&nbsp;资料变更 &nbsp;—</p>
+                    <div class="change">
+                        <div>工作单位：<input type="text" placeholder="武汉学院"></div>
+                        <div>家庭地址：<input type="text"></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email：<input type="text"></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机：<input type="text"></div>
+                    </div>
+                    <p>—&nbsp;&nbsp;请输入确认密码 &nbsp;—</p>
+                    <div class="change">
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：<input type="text"></div>
+                    </div>
+                    <div class="ziliaotijiao"><button>确认</button> <button>重填</button></div>
+                </div>
+                <div class="seven both_class" style="display: none">
+                    <table border="1" cellspacing="0" >
+                        <tr>
+                            <td><input type="checkbox" style="margin-right: 5px">取消</td>
+                            <td>预约状态</td>
+                            <td>登记日期</td>
+                            <td>索取号</td>
+                            <td>条码号</td>
+                            <td>截止日期</td>
+                            <td>还回日期</td>
+                            <td>通知方式</td>
+                            <td>备注</td>
+                            <td>最后通知时间</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>在线预约</td>
+                            <td>2018-10-12</td>
+                            <td>963258</td>
+                            <td>7894551235659</td>
+                            <td>2018-06-03</td>
+                            <td>2019-11-03</td>
+                            <td>短信</td>
+                            <td></td>
+                            <td>2019-11-03</td>
+                        </tr>
+                        </table>
+                    <button style="margin-left: 45%; margin-top: 40px; width: 80px;height: 28px; background: #89c0c7; color: #fff; border: 1px solid #fff; border-radius: 5px">取消预约</button>
+                </div>
+                <div class="eight both_class" style="display: none">
+                    <p style="color:red;font-size: 14px;margin: 20px">暂无收藏信息！！！</p>
+                    <p style="font-size: 13px;margin: 20px;border-bottom: 1px solid #a4a6a9;padding-bottom: 15px;"><span style="color: green;">温馨提示:</span>您可以选择返回首页,通过书目检索，收藏自己喜欢的有关书籍!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>©2018　武汉学院学图书馆 版权所有 人员：李海荣、陈武、张启兵、朱德怀、杨星、胡丽娜</p>
+</div>
+<script type="text/javascript" src="js/personal.js"></script>
+</body>
+</html>

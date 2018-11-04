@@ -19,11 +19,12 @@
             <li>资源</li>
             <li>分馆</li>
             <li>咨询台</li>
-            <li><p>
+            <a href="login.html"><li><p>
                 <img src="./img/人物.png" alt="">
                 <span>登录/注册</span>
                 </p>
             </li>
+            </a>
         </ul>
     </div>
 </div>
@@ -46,9 +47,9 @@
                 <div class="nav" id="nav">
                     <ul>
                         <li class="changeColor">首页</li>
-                        <li>点击看看</li>
-                        <li>会自动的</li>
-                        <li>我的网站</li>
+                        <li>全景俯瞰</li>
+                        <li>图书馆</li>
+                        <li>图书看点</li>
                     </ul>
                 </div>
                 <div class="banner" id="banner">
@@ -68,32 +69,70 @@
             </div>
         </div>
         <div class="content_box2">
-            <ul class="tabs">
-                <li>
-                    <input type="radio" name="tabs" id="tab1" checked/>
-                    <label for="tab1">公告消息</label>
-                    <div class="tab_content" id="tab_content1">
-                        <p>选项卡1的内容</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="tabs" id="tab2"/>
-                    <label for="tab2">资源动态</label>
-                    <div class="tab_content" id="tab_content2">
-                        <p>选项卡2的内容</p>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="tabs" id="tab3"/>
-                    <label for="tab3">讲座/活动</label>
-                    <div class="tab_content" id="tab_content3">
-                        <p>选项卡3的内容</p>
-                    </div>
-                </li>
-            </ul>
+            <div id="tab">
+                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)">热点新闻</h3>
+                <div class="block" id="con_two_1">
+                    <ul>
+                        <li><a class="tab_menu" href="#">[新闻热点]</a><a class="tab_title" href="#">根据武汉学院办字（2018）16号文件通知</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新闻热点]</a><a class="tab_title" href="#">根据武汉学院办字（2018）16号文件通知</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新闻热点]</a><a class="tab_title" href="#">根据武汉学院办字（2018）16号文件通知</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新闻热点]</a><a class="tab_title" href="#">根据武汉学院办字（2018）16号文件通知</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新闻热点]</a><a class="tab_title" href="#">根据武汉学院办字（2018）16号文件通知</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新闻热点]</a><a class="tab_title" href="#">根据武汉学院办字（2018）16号文件通知</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新闻热点]</a><a class="tab_title" href="#">根据武汉学院办字（2018）16号文件通知</a><span>2014-09-05</span></li>
+                    </ul>
+                </div>
+                <h3 id="two2" onmouseover="setContentTab('two',2,4)">自有资源</h3>
+                <div id="con_two_2">
+                    <ul>
+                        <li><a class="tab_menu" href="#">[自有资源]</a><a class="tab_title" href="#">国庆节（10月1日-3日）为国家法定节假日</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[自有资源]</a><a class="tab_title" href="#">国庆节（10月1日-3日）为国家法定节假日</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[自有资源]</a><a class="tab_title" href="#">国庆节（123）为国家法定机均可正常使用。戏</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[自有资源]</a><a class="tab_title" href="#">国庆节（123）为国家法定机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[自有资源]</a><a class="tab_title" href="#">国庆节（123）为国家法定机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[自有资源]</a><a class="tab_title" href="#">国庆节（123）为国家法定机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[自有资源]</a><a class="tab_title" href="#">国庆节（123）为国家法定机均可正常使用。</a><span>2014-09-05</span></li>
+                    </ul>
+                </div>
+                <h3 id="two3" onmouseover="setContentTab('two',3,4)">试用资源</h3>
+                <div id="con_two_3">
+                    <ul>
+                        <li><a class="tab_menu" href="#">[试用资源]</a><a class="tab_title" href="#">闭馆期间，电子资源及24机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[试用资源]</a><a class="tab_title" href="#">闭馆期间，电子资源及24机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[试用资源]</a><a class="tab_title" href="#">闭馆期间，电子资源及24机均可正常使用</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[试用资源]</a><a class="tab_title" href="#">闭馆期间，电子资源及24机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[试用资源]</a><a class="tab_title" href="#">闭馆期间，电子资源及24机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[试用资源]</a><a class="tab_title" href="#">闭馆期间，电子资源及24机均可正常使用。</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[试用资源]</a><a class="tab_title" href="#">闭馆期间，电子资源及24机均可正常使用。</a><span>2014-09-05</span></li>
+                    </ul>
+                </div>
+                <h3 id="two4" onmouseover="setContentTab('two',4,4)">新书通报</h3>
+                <div id="con_two_4">
+                    <ul>
+                        <li><a class="tab_menu" href="#">[新书通报]</a><a class="tab_title" href="#">读秀收录中文图书330多万种、全戏</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新书通报]</a><a class="tab_title" href="#">读秀收录中文图书330多万种</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新书通报]</a><a class="tab_title" href="#">读秀收录中文图书330多万种、</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新书通报]</a><a class="tab_title" href="#">读秀收录中文图书330多万种、全</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新书通报]</a><a class="tab_title" href="#">读秀收录中文图书330多万种、全</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新书通报]</a><a class="tab_title" href="#">读秀收录中文图书330多万种、全</a><span>2014-09-05</span></li>
+                        <li><a class="tab_menu" href="#">[新书通报]</a><a class="tab_title" href="#">读秀收录中文图书330多万种、全</a><span>2014-09-05</span></li>
+                    </ul>
+                </div>
+
+            </div>
 
         </div>
-        <div class="content_box3"></div>
+        <div class="content_box3">
+            <div><img src="./img/1.jpg" alt=""></div>
+            <div><img src="./img/2.jpg" alt=""></div>
+            <div><img src="./img/3.jpg" alt=""></div>
+            <div><img src="./img/3.jpg" alt=""></div>
+            <div><img src="./img/2.jpg" alt=""></div>
+            <div><img src="./img/1.jpg" alt=""></div>
+            <div><img src="./img/2.jpg" alt=""></div>
+            <div><img src="./img/3.jpg" alt=""></div>
+            <div><img src="./img/1.jpg" alt=""></div>
+        </div>
     </div>
 </div>
 <div class="footer"><img src="img/footer.png" alt=""></div>
