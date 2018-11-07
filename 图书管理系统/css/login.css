@@ -39,7 +39,7 @@ body{
 .login_box{
     width: 350px;
     background-color: rgba(0,0,0,.5);
-    margin: 110px auto;
+    margin: 90px auto  ;
     border-radius: 10px;
     padding-bottom: 50px;
 }
@@ -75,7 +75,7 @@ input{
     padding-top: 5%;
     padding-left: 5px;
 }
-button{
+button,.button{
     width: 87%;
     height: 40px;
     border: 1px solid #1172c4;

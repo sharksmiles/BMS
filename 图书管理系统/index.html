@@ -19,12 +19,15 @@
             <li>资源</li>
             <li>分馆</li>
             <li>咨询台</li>
-            <a href="login.html"><li><p>
-                <img src="./img/人物.png" alt="">
-                <span>登录/注册</span>
+                <li>
+                    <a href="login.html">
+                 <p>
+                     <img src="./img/人物.png" alt="">
                 </p>
+                       <span style="font-size: 12px;position: relative; top: -10px; left: 3px;color: #FFF">未登录</span>
+                    </a>
+
             </li>
-            </a>
         </ul>
     </div>
 </div>
@@ -34,9 +37,20 @@
             <div class="box_top">智慧搜索</div>
         </div>
         <div class="box_content">
-        <input type="text"> <button>检索</button>
+            <form action="search.html">
+        <input type="text" class="input"> <button>检索</button>
+            <p style="position: relative;top: -40px; left: -30px">
+                搜索：
+                <input type="radio" name="book" value="book_name" checked>书名&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="book" value="writer">作者&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="book" value="book_number">书编号
+                <br>
+                <br>
+                <br>
+                一站式搜索本校已购图书
+            </p>
+            </form>
         </div>
-        <p>一站式搜索本校已购图书</p>
     </div>
 </div>
 <div class="content">
